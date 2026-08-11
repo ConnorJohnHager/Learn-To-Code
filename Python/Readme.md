@@ -7,3 +7,4 @@
 * COURSE: [CS50's Introduction to Programming with Python with David J. Malan](https://cs50.harvard.edu/python/ "CS50's Introduction to Programming with Python with David J. Malan")
 
 > *Compare your answers with mine for CS50's Problem Sets above!*
+>> Note: Problem Set 4 does not include the "Bitcoin Price Index" assignment
