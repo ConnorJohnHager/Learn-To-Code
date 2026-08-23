@@ -1,0 +1,2 @@
+pillow==12.3.0
+tabulate==0.10.0
