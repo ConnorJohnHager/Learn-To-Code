@@ -10,8 +10,6 @@ def select_date_input():
             user_input = input().strip()
             if user_input == "1" or user_input == "2":
                 return int(user_input)
-            else:
-                pass
         except:
             pass
 
@@ -75,9 +73,7 @@ def convert_date_input(type):
                 else:
                     monthNumber = int(second)
 
-            if monthNumber > 12 or dayNumber > 31:
-                pass
-            else:
+            if monthNumber <= 12 and dayNumber <= 31:
                 print(f"{yearNumber:04}-{monthNumber:02}-{dayNumber:02}") 
                 return
         except:

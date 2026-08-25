@@ -7,10 +7,9 @@ def shorten(input): # Renamed to fit assignment
     vowels = ["a", "e", "i", "o", "u"]
 
     for letter in input:
-        if letter.lower() not in vowels: # Broken component for testing is 'not'
-            pass
-        else:
+        if letter.lower() in vowels: # Broken component for testing is missing 'not'
             newValue = str(newValue + letter)
+    
     return newValue
 
 if __name__ == "__main__":

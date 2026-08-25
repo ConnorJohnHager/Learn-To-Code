@@ -12,8 +12,6 @@ def get_level():
             user_input = int(input("Choose Level: ").strip())
             if user_input > 0 and user_input < 4:
                 return user_input
-            else:
-                pass
         except:
             pass
 

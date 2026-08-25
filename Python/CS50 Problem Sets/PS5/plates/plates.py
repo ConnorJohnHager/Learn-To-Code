@@ -14,19 +14,19 @@ def is_valid(input): # Renamed to fit assignment, switched to returning bool
         isValid = False
     
     # Check Appropriate Characters
-    if input.isalnum() == False:
+    if not input.isalnum():
         isValid = False
     
     # Check First Two Characters
-    if input[0:2].isalpha() == False:
+    if not input[0:2].isalpha():
         isValid = False
     
     # Check Number Placements
     for each in input:
-        if numbersFound == True:
-            if each.isdecimal() == False:
+        if numbersFound:
+            if not each.isdecimal():
                 isValid = False
-        elif numbersFound == False:
+        elif not numbersFound:
             if each.isdecimal() and each == "0":
                 isValid = False
             elif each.isdecimal():

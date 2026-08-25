@@ -27,10 +27,10 @@ def check_argv():
         if newFileName.endswith(each):
             doesItPass2 = True
 
-    if doesItPass1 == False:
+    if not doesItPass1:
         sys.exit("Invalid file type")
 
-    if doesItPass2 == False:
+    if not doesItPass2:
         sys.exit("Invalid type for new image")
 
 

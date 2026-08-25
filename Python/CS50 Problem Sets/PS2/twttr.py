@@ -3,10 +3,9 @@ def remove_vowels(input):
     vowels = ["a", "e", "i", "o", "u"]
 
     for letter in input:
-        if letter.lower() in vowels:
-            pass
-        else:
+        if letter.lower() not in vowels:
             newValue = str(newValue + letter)
+
     return newValue
 
 def main():

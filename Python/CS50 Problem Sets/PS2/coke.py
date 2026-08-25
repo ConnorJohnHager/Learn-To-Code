@@ -8,8 +8,6 @@ def main():
             coin = int(user_input)
             if coin == 5 or coin == 10 or coin == 25:
                 cokeCost = cokeCost - coin
-            else: 
-                pass
         except:
             print("Input Error")
     if cokeCost < 0:

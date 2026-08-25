@@ -6,19 +6,19 @@ def check_plate(input):
         return "INVALID"
     
     # Check Appropriate Characters
-    if input.isalnum() == False:
+    if not input.isalnum():
         return "INVALID"
     
     # Check First Two Characters
-    if input[0:2].isalpha() == False:
+    if not input[0:2].isalpha():
         return "INVALID"
     
     # Check Number Placements
     for each in input:
-        if numbersFound == True:
-            if each.isdecimal() == False:
+        if numbersFound:
+            if not each.isdecimal():
                 return "INVALID"
-        elif numbersFound == False:
+        elif not numbersFound:
             if each.isdecimal() and each == "0":
                 return "INVALID"
             elif each.isdecimal():

@@ -6,8 +6,6 @@ def select_level():
             user_input = int(input("Choose Level: ").strip())
             if user_input > 0:
                 return user_input
-            else:
-                pass
         except:
             pass
 
